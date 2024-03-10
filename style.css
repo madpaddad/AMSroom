@@ -1,0 +1,93 @@
+*{
+    padding: 10px;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "a a a a a a"
+        "b b b b d d"
+        "b b b b d d"
+        "b b b b d d"
+        "c c c c c c";
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    float: left;
+    }
+.nav{
+    float: right;
+    position: sticky;
+    /* top : 30px; */
+    /* right: 0px; */
+}
+
+.btn-booking{
+    /* display: block;
+    font-size: 15px bold 20; 
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #3d5a80, #6285bf 50%,#fff 80%);
+    box-shadow:2px 2px 2px 1px rgb(0 0 0 / 20%);
+    transition: 0.3s ease-out;
+    border-color: white;
+    position: relative; */
+    justify-content: center;
+    font-size: 10px; 
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #3d5a80, #6285bf 50%,#fff 80%);
+    box-shadow:2px 2px 2px 1px rgb(0 0 0 / 20%);
+    transition: 0.5s ease-out;
+    padding: 10px;
+    border-width: thin;
+    border: none;
+}
+
+.btn-booking:hover{
+    transition: 0.5s ease-out;
+      color: #3d5a80;
+      background-position: right center;
+      box-shadow: 3px 3px 2px 1px #3d5a80;
+  }
+  
+  .btn-booking:active{
+    transition: 0.2s ease-in;
+    box-shadow: 2px 2px 1px 0px #3d5a80;
+  }
+
+.lab-in{
+    display: block;
+}
+.header{
+    grid-area: a;
+}
+
+.layout{
+    grid-area: b;
+    font-style: sans-serif;
+    color: #3d5a80;
+}
+
+.footer{
+    grid-area: c;
+}
+
+.Bookinginfo{
+    grid-area: d;
+}
+
+/* media screen */
+@media screen and (max-width: 768px) {
+ .Bookinginfo{
+        align-items: center;
+    }
+}
