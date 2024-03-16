@@ -1,4 +1,4 @@
-document.getElementById('startbooking').addEventListener('click', function() {
+document.getElementById('btn-booking').addEventListener('click', function() {
     toggleBookingInfo();
 });
 

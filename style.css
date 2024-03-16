@@ -40,18 +40,6 @@
     background-color: #3d5a80;
 }
 .btn-booking{
-    /* display: block;
-    font-size: 15px bold 20; 
-    color: #000;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    background-size: 200% auto;
-    background-image: linear-gradient(to right, #3d5a80, #6285bf 50%,#fff 80%);
-    box-shadow:2px 2px 2px 1px rgb(0 0 0 / 20%);
-    transition: 0.3s ease-out;
-    border-color: white;
-    position: relative; */
     justify-content: center;
     font-size: 10px; 
     color: #fff;
@@ -68,14 +56,14 @@
 }
 
 .btn-booking:hover{
-    transition: 0.5s ease-out;
+    transition: 0.2s ease-out;
       color: #3d5a80;
       background-position: right center;
       box-shadow: 3px 3px 2px 1px #3d5a80;
   }
   
   .btn-booking:active{
-    transition: 0.2s ease-in;
+    transition: 0.1s ease-in;
     box-shadow: 2px 2px 1px 0px #3d5a80;
   }
 
@@ -120,15 +108,13 @@
     border: none;
 }
 
-
 .layout{
     grid-area: b;
     font-style: sans-serif;
     color: #3d5a80;
-    /* width: 100%; */
-    /* height: 100%; */
     margin: 25px;
     padding: 20px;
+
 }
 #ITC{
     justify-self: start;
@@ -141,6 +127,7 @@
 
 .headlay{
     padding: 30px;
+    font-family: sans-serif;
 }
 .footer{
     grid-area: c;
@@ -150,7 +137,9 @@
     padding-top: 90px;
     grid-area: d;
     font-family: sans-serif;
+    display: none;
 }
+
 
 /* media screen */
 @media screen and (max-width: 768px) {
