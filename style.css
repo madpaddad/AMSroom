@@ -1,5 +1,6 @@
 *{
-    padding: 10px;
+    padding: 0px;
+    margin: 0;
 }
 
 .container{
@@ -16,14 +17,28 @@
 
 #logo{
     float: left;
-    }
+    padding: 20px;
+    padding-left: 50px;
+}
 .nav{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
     float: right;
-    position: sticky;
+    position: relative;
     /* top : 30px; */
     /* right: 0px; */
+    color: black;
+    margin: 40px 40px;
 }
 
+
+.background{
+    height: 100px;
+    width: 500px;
+    background-color: #3d5a80;
+}
 .btn-booking{
     /* display: block;
     font-size: 15px bold 20; 
@@ -64,30 +79,99 @@
     box-shadow: 2px 2px 1px 0px #3d5a80;
   }
 
+.linfo{
+    font: normal normal bold 20px/1.5 Arial;
+    color: #3d5a80;
+}
+
 .lab-in{
     display: block;
+    padding: 15px;
+    font-weight: 600;
 }
+
+.input{
+    font-size: 15px;
+    margin-left: 30px;
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+}
+.select{
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+
+}
+
+.time{
+    position: relative;
+    display: block;
+}
+
+
 .header{
+    position: -webkit-sticky;
+    position: sticky;
     grid-area: a;
+    /* background-color:#3d5a80; */
+    display: inline-block;
+    padding-block: 20px;
+    border: none;
 }
+
 
 .layout{
     grid-area: b;
     font-style: sans-serif;
     color: #3d5a80;
+    /* width: 100%; */
+    /* height: 100%; */
+    margin: 25px;
+    padding: 20px;
+}
+#ITC{
+    justify-self: start;
+    /* transform: scale(0.5); */
+    box-shadow: 10px 10px 5px black;
+    margin: 0px;
+    opacity: 0.7;
+    /* height: auto; */
 }
 
+.headlay{
+    padding: 30px;
+}
 .footer{
     grid-area: c;
 }
 
 .Bookinginfo{
+    padding-top: 90px;
     grid-area: d;
+    font-family: sans-serif;
 }
 
 /* media screen */
 @media screen and (max-width: 768px) {
- .Bookinginfo{
-        align-items: center;
+    .nav{
+        margin : 40px 20px;
+    }
+    .headlay{
+        font-size: 20px;
+    }
+    .Bookinginfo{
+        font-size: 15px;
+    }
+
+    .lab-in{
+        padding: 10px;
+    }
+    .input{
+        width: 150px;
+        margin-right: 20px;
+    }
+    .select{
+        width: 70px;
     }
 }
