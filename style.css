@@ -114,7 +114,6 @@
     color: #3d5a80;
     margin: 25px;
     padding: 20px;
-
 }
 #ITC{
     justify-self: start;
@@ -133,13 +132,28 @@
     grid-area: c;
 }
 
-.Bookinginfo{
+/* .Bookinginfo{
     padding-top: 90px;
     grid-area: d;
     font-family: sans-serif;
     display: none;
 }
 
+.Bookinginfo:active{
+    display: block;
+    transition: 2s ease-in-out;
+} */
+.Bookinginfo {
+    padding-top: 90px;
+    grid-area: d;
+    font-family: sans-serif;
+    display: none;
+}
+
+.bookingInfoVisible {
+    display: block;
+    opacity: 1;
+}
 
 /* media screen */
 @media screen and (max-width: 768px) {
@@ -147,12 +161,14 @@
         margin : 40px 20px;
     }
     .headlay{
-        font-size: 20px;
+        font-size: 15px;
     }
     .Bookinginfo{
         font-size: 15px;
     }
-
+    .btn-booking:hover{
+        display: none;
+    }
     .lab-in{
         padding: 10px;
     }
