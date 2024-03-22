@@ -33,6 +33,11 @@
     margin: 40px 40px;
 }
 
+.nav:hover{
+    color: white;
+    transition: 0.4s;
+}
+
 
 .background{
     height: 100px;
@@ -102,7 +107,7 @@
     position: -webkit-sticky;
     position: sticky;
     grid-area: a;
-    /* background-color:#3d5a80; */
+    background-color:#3d5a80;
     display: inline-block;
     padding-block: 20px;
     border: none;
@@ -128,6 +133,7 @@
     padding: 30px;
     font-family: sans-serif;
 }
+
 .footer{
     grid-area: c;
 }
@@ -150,10 +156,10 @@
     display: none;
 }
 
-.bookingInfoVisible {
+/* .bookingInfoVisible {
     display: block;
     opacity: 1;
-}
+} */
 
 /* media screen */
 @media screen and (max-width: 768px) {
@@ -166,8 +172,8 @@
     .Bookinginfo{
         font-size: 15px;
     }
-    .btn-booking:hover{
-        display: none;
+    .btn-booking:hover:not{
+        transition: none;
     }
     .lab-in{
         padding: 10px;
